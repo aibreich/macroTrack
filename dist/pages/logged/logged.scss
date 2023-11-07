@@ -1,0 +1,230 @@
+.logged{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-evenly;
+    // overflow-y: scroll;
+    
+    .addMeal{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: space-evenly;
+        background-color: rgb(87, 87, 87);
+        border-radius: 20px;
+        color: white;
+        
+        .meal-form{
+            width: 350px;
+            height: 120px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+             
+            .left {
+                padding-left: 20px;
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                
+            }
+            .right {
+                padding-left: 20px;
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                
+            }
+        }
+        #addMealBtn{
+            width: 125px;
+            height: 20px;
+            background-color: orange;
+            border: 2px solid salmon;
+            border-radius: 10px;  
+            margin-bottom: 15px;
+        }
+    }
+
+    .mealData{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 80px;
+          
+        
+       .meal {
+        width: 750px;
+        height: 225px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 25px;
+        margin-top: 20px;
+        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33); 
+ 
+        .mealname{
+            width: 200px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 20px; 
+            
+        }
+        .meal-cont{
+            width: 95%;
+            height: 150px;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            align-items: center;
+            justify-content: space-evenly;
+            margin-left: 35px;
+            
+            .cals{
+                width: 200px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                font-size: 18px; 
+            }
+            .fats{
+                width: 200px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                font-size: 18px; 
+            }
+            .pro{
+                width: 200px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                font-size: 18px; 
+            }
+            .carbs{
+                width: 200px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                font-size: 18px; 
+            }
+
+        }
+    } 
+    
+    .noMeal{
+        width: 150px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+         
+    }
+    }
+
+    .dailytotal {
+        width: 650px; 
+        height: 80px; 
+        // height: fit-content;
+        position: fixed;
+        bottom: 5px;  
+        background-color: rgb(87, 87, 87); 
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 20px;
+
+        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+
+        .total {
+            width: 650px;
+        height: 70px;
+        // background-color: white;
+        padding: 25px;
+        // margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
+            .dTotal {
+                height: 40px;
+                width: 100px;
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-evenly;
+                 color: white;
+                 font-size: 18px; 
+            }
+            .dt-cont {
+                
+                width: 550px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+    
+                .dCals {
+                height: 30px;
+                width: fit-content;
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-evenly;
+                 color: orange;
+                 font-size: 16px;
+                 
+            }
+      .dFats {
+        height: 30px;
+        width: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         color: orange;
+         font-size: 16px;
+         
+    }
+      .dPotein {
+        height: 30px;
+        width: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         color: orange;
+         font-size: 16px;
+         
+    }
+     .dCarbs {
+        height: 30px;
+        width: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly; 
+         color: orange;
+         font-size: 16px;
+         
+    }
+            }
+        }
+        
+        
+        
+        
+    }
+    
+}

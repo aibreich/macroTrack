@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px; }
+
+#app {
+  padding: 40px;
+  background-color: lightslategray;
+  width: 100vw;
+  min-height: 90vh;
+  max-height: fit-content;
+  box-shadow: inset 0px 2px 6px 0px #646464; }
+  #app .newUser {
+    background-color: lightslategrey;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    #app .newUser .signIn {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 350px;
+      width: 250px; }
+      #app .newUser .signIn label {
+        margin-top: 10px;
+        margin-right: 120px;
+        width: 120px;
+        height: 15px;
+        font-size: 18px; }
+      #app .newUser .signIn #fname {
+        width: 250px;
+        height: 35px;
+        font-size: 16px;
+        border-bottom: 2px solid orange;
+        border-right: 2px solid orange;
+        border-top: 2px solid salmon;
+        border-left: 2px solid salmon;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px #212121; }
+      #app .newUser .signIn #lname {
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid orange;
+        border-right: 2px solid orange;
+        border-top: 2px solid salmon;
+        border-left: 2px solid salmon;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px #212121; }
+      #app .newUser .signIn #email {
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid orange;
+        border-right: 2px solid orange;
+        border-top: 2px solid salmon;
+        border-left: 2px solid salmon;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px #212121; }
+      #app .newUser .signIn #pw {
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid orange;
+        border-right: 2px solid orange;
+        border-top: 2px solid salmon;
+        border-left: 2px solid salmon;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px #212121; }
+      #app .newUser .signIn #addUser {
+        margin-top: 15px;
+        width: 250px;
+        height: 35px;
+        background-color: darkorange;
+        border-bottom: 2px solid orange;
+        border-right: 2px solid orange;
+        border-top: 2px solid salmon;
+        border-left: 2px solid salmon;
+        box-shadow: 2px 2px 3px 0px #212121; }
+    #app .newUser .loginBox {
+      height: 220px;
+      width: 250px;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }
+      #app .newUser .loginBox label {
+        margin-top: 15px;
+        margin-right: 120px;
+        width: 120px;
+        height: 15px;
+        font-size: 18px; }
+      #app .newUser .loginBox #emailL {
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid salmon;
+        border-right: 2px solid salmon;
+        border-top: 2px solid orange;
+        border-left: 2px solid orange;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px #212121; }
+      #app .newUser .loginBox #pwL {
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid salmon;
+        border-right: 2px solid salmon;
+        border-top: 2px solid orange;
+        border-left: 2px solid orange;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px #212121; }
+      #app .newUser .loginBox #logIn {
+        margin-top: 15px;
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid salmon;
+        border-right: 2px solid salmon;
+        border-top: 2px solid orange;
+        border-left: 2px solid orange;
+        background-color: darkorange;
+        box-shadow: 2px 2px 3px 0px #212121; }
+
+nav {
+  height: 10vh;
+  width: 100vw;
+  background-color: #575757;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+  nav .app-name {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 3px solid darkorange;
+    border-radius: 5px;
+    width: 160px;
+    font-size: 28px;
+    height: 32.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: 2px solid darkorange;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 2px 2px 3px 0px #212121;
+    font-weight: bold; }
+  nav a:hover {
+    font-size: 19px;
+    transition: font 1s ease; }
+  nav .mealBtn {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: darkorange;
+    border: 2px solid #df7a00;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 3px 0px #212121; }
+
+.home {
+  background-color: lightslategrey;
+  width: 100%;
+  height: 100%; }
+
+.logged {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  .logged .addMeal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #575757;
+    border-radius: 20px;
+    color: white; }
+    .logged .addMeal .meal-form {
+      width: 350px;
+      height: 120px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }
+      .logged .addMeal .meal-form .left {
+        padding-left: 20px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly; }
+      .logged .addMeal .meal-form .right {
+        padding-left: 20px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly; }
+    .logged .addMeal #addMealBtn {
+      width: 125px;
+      height: 20px;
+      background-color: orange;
+      border: 2px solid salmon;
+      border-radius: 10px;
+      margin-bottom: 15px; }
+  .logged .mealData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 80px; }
+    .logged .mealData .meal {
+      width: 750px;
+      height: 225px;
+      background-color: white;
+      border-radius: 20px;
+      padding: 25px;
+      margin-top: 20px;
+      box-shadow: 2px 2px 3px 0px #212121; }
+      .logged .mealData .meal .mealname {
+        width: 200px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 20px; }
+      .logged .mealData .meal .meal-cont {
+        width: 95%;
+        height: 150px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 35px; }
+        .logged .mealData .meal .meal-cont .cals {
+          width: 200px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          font-size: 18px; }
+        .logged .mealData .meal .meal-cont .fats {
+          width: 200px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          font-size: 18px; }
+        .logged .mealData .meal .meal-cont .pro {
+          width: 200px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          font-size: 18px; }
+        .logged .mealData .meal .meal-cont .carbs {
+          width: 200px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          font-size: 18px; }
+    .logged .mealData .noMeal {
+      width: 150px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }
+  .logged .dailytotal {
+    width: 650px;
+    height: 80px;
+    position: fixed;
+    bottom: 5px;
+    background-color: #575757;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px 0px #212121; }
+    .logged .dailytotal .total {
+      width: 650px;
+      height: 70px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly; }
+      .logged .dailytotal .total .dTotal {
+        height: 40px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+        font-size: 18px; }
+      .logged .dailytotal .total .dt-cont {
+        width: 550px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly; }
+        .logged .dailytotal .total .dt-cont .dCals {
+          height: 30px;
+          width: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          color: orange;
+          font-size: 16px; }
+        .logged .dailytotal .total .dt-cont .dFats {
+          height: 30px;
+          width: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          color: orange;
+          font-size: 16px; }
+        .logged .dailytotal .total .dt-cont .dPotein {
+          height: 30px;
+          width: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          color: orange;
+          font-size: 16px; }
+        .logged .dailytotal .total .dt-cont .dCarbs {
+          height: 30px;
+          width: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          color: orange;
+          font-size: 16px; }
+
+.stats {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  .stats .addMeal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #575757;
+    border-radius: 20px;
+    color: white; }
+    .stats .addMeal .stats-form {
+      width: 350px;
+      height: 160px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }
+      .stats .addMeal .stats-form .statf-cont {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 150px; }
+        .stats .addMeal .stats-form .statf-cont .height-cont {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 250px;
+          padding: 15px; }
+          .stats .addMeal .stats-form .statf-cont .height-cont .left-h {
+            width: 50%;
+            height: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly; }
+            .stats .addMeal .stats-form .statf-cont .height-cont .left-h input {
+              width: 80px; }
+          .stats .addMeal .stats-form .statf-cont .height-cont .right-h {
+            width: 50%;
+            height: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly; }
+            .stats .addMeal .stats-form .statf-cont .height-cont .right-h input {
+              width: 80px; }
+    .stats .addMeal #addstatsBtn {
+      width: 150px;
+      height: 20px;
+      background-color: darkorange;
+      border: 2px solid salmon;
+      border-radius: 10px;
+      margin-bottom: 15px; }
+  .stats .mealData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content; }
+    .stats .mealData .stats {
+      width: 750px;
+      height: 125px;
+      background-color: white;
+      border-radius: 20px;
+      padding: 25px;
+      margin-top: 20px;
+      box-shadow: 2px 2px 3px 0px #212121; }
+      .stats .mealData .stats .stats-cont {
+        width: 95%;
+        height: 55px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 35px; }
+        .stats .mealData .stats .stats-cont .weight {
+          width: 200px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly; }
+        .stats .mealData .stats .stats-cont .height {
+          width: 200px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly; }
+      .stats .mealData .stats .dc {
+        position: relative;
+        left: -40%;
+        bottom: -10px; }
+    .stats .mealData .noMeal {
+      width: 150px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }

@@ -1,0 +1,143 @@
+.stats{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-evenly;
+    // overflow-y: scroll;
+    
+      
+
+    .addMeal{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: space-evenly;
+        background-color: rgb(87, 87, 87);
+        border-radius: 20px;
+        color: white;
+        
+        .stats-form{
+            width: 350px;
+            height: 160px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+             
+            .statf-cont {
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 150px;
+
+                .height-cont{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    width: 250px;
+                    padding: 15px;
+                    .left-h{
+                        width: 50%;
+                        height: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        input {
+                            width: 80px;
+                        }
+                    }
+                    .right-h{
+                        width: 50%;
+                        height: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        input {
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+            
+        }
+        #addstatsBtn{
+            width: 150px;
+            height: 20px;
+            background-color: darkorange;
+            border: 2px solid salmon;
+            border-radius: 10px;  
+            margin-bottom: 15px;
+        }
+    }
+    .mealData{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: fit-content;
+          
+        
+       .stats {
+        width: 750px;
+        height: 125px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 25px;
+        margin-top: 20px;
+
+        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33); 
+ 
+        .stats-cont{
+            width: 95%;
+            height: 55px;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            align-items: center;
+            justify-content: space-evenly;
+            margin-left: 35px;
+            
+            .weight{
+                width: 200px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                
+            }
+            .height{
+                width: 200px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                
+            }
+            
+
+        }
+        .dc{
+            position: relative;
+            left: -40%;
+            bottom: -10px;
+        }
+    } 
+    .noMeal{
+        width: 150px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+         
+    }
+    }
+
+    
+    
+}

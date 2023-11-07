@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  // padding: 40px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+#app {
+  padding: 40px;
+  background-color: lightslategray;
+  width: 100vw;
+  min-height: 90vh;
+  max-height: fit-content;
+  box-shadow: inset 0px 2px 6px 0px rgb(100, 100, 100);
+  // overflow-y: scroll;
+
+  .newUser {
+    background-color: lightslategrey;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .signIn {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 350px;
+      width: 250px;
+      label {
+        margin-top: 10px;
+        margin-right: 120px;
+        width: 120px;
+        height: 15px;
+        font-size: 18px;
+      }
+
+      #fname {
+        width: 250px;
+        height: 35px;
+        font-size: 16px;
+        border-bottom: 2px solid orange;
+        border-right: 2px solid orange;
+        border-top: 2px solid salmon;
+        border-left: 2px solid salmon;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      }
+      #lname {
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid orange;
+        border-right: 2px solid orange;
+        border-top: 2px solid salmon;
+        border-left: 2px solid salmon;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      }
+      #email {
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid orange;
+        border-right: 2px solid orange;
+        border-top: 2px solid salmon;
+        border-left: 2px solid salmon;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      }
+      #pw {
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid orange;
+        border-right: 2px solid orange;
+        border-top: 2px solid salmon;
+        border-left: 2px solid salmon;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      }
+
+      #addUser {
+        margin-top: 15px;
+        width: 250px;
+        height: 35px;
+        background-color: darkorange;
+        border-bottom: 2px solid orange;
+        border-right: 2px solid orange;
+        border-top: 2px solid salmon;
+        border-left: 2px solid salmon;
+        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      }
+    }
+    .loginBox {
+      height: 220px;
+      width: 250px;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      label {
+        margin-top: 15px;
+        margin-right: 120px;
+        width: 120px;
+        height: 15px;
+        font-size: 18px;
+      }
+      #emailL {
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid salmon;
+        border-right: 2px solid salmon;
+        border-top: 2px solid orange;
+        border-left: 2px solid orange;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      }
+      #pwL {
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid salmon;
+        border-right: 2px solid salmon;
+        border-top: 2px solid orange;
+        border-left: 2px solid orange;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      }
+
+      #logIn {
+        margin-top: 15px;
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid salmon;
+        border-right: 2px solid salmon;
+        border-top: 2px solid orange;
+        border-left: 2px solid orange;
+        background-color: darkorange;
+        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      }
+    }
+  }
+}

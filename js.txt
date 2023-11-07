@@ -1,0 +1,62 @@
+async function getpreviousData() {
+  //   document.getElementById("mealData").innerHTML = "";
+  let date = new Date();
+  let month = date.getMonth();
+  let day = date.getDate();
+  let prev = day - 1;
+  let year = date.getFullYear();
+  const q = query(
+    collection(db, "Meals"),
+    where("date", "==", `${month}` + "/" + `${prev}` + "/" + `${year}`)
+  );
+
+  const querySnapshot = await getDocs(q);
+  let htmlStr = "";
+  if (querySnapshot.docs.length > 0) {
+    querySnapshot.forEach((doc) => {
+      htmlStr += `
+        <div class="meal">
+      <h4>Name: ${doc.data().mealName}</h4>
+      <div class="meal-cont">
+        <div class="cals">
+          <p>Calories</p>
+          <p>${doc.data().calories}</p>
+        </div>
+        <div class="fats">
+          <p>fats</p>
+          <p>${doc.data().fats}</p>
+        </div>
+        <div class="pro">
+          <p>Protein</p>
+          <p>${doc.data().protein}</p>
+        </div>
+        <div class="carbs">
+          <p>Carbs</p>
+          <p>${doc.data().carbs}</p>
+        </div>
+      </div>
+    </div>`;
+    });
+  } else {
+    console.log(prev);
+    htmlStr = `<p>No meals Tracked</p>`;
+  }
+
+  document.getElementById("mealData").innerHTML = htmlStr;
+}
+
+$("#update").on("click", (e) => {
+  //call logout function
+  updateProfile(auth.currentUser, {
+    displayName: "Jane Q. User",
+    photoURL: "https://example.com/jane-q-user/profile.jpg",
+  })
+    .then(() => {
+      // Profile updated!
+      // ...
+    })
+    .catch((error) => {
+      // An error occurred
+      // ...
+    });
+});
