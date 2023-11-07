@@ -83,7 +83,7 @@ var globaluid = null;
 onAuthStateChanged(auth, (user) => {
   if (user != null) {
     console.log(user, "logged In");
-    // route(user);
+
     changeRoute("");
     let uid = user.uid;
     globaluid = uid;
@@ -91,10 +91,8 @@ onAuthStateChanged(auth, (user) => {
     document.getElementById("today").style.display = "block";
     document.getElementById("stats").style.display = "block";
     document.getElementById("lo").style.display = "block";
-    // document.getElementById("mealBtn").style.display = "flex";
   } else {
     console.log("No User");
-    // route(user);
     changePage("signIn");
     document.getElementById("dayprev").style.display = "none";
     document.getElementById("today").style.display = "none";
