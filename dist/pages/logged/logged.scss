@@ -7,6 +7,19 @@
   justify-content: space-evenly;
   // overflow-y: scroll;
 
+  .dateToday{
+    position: relative;
+    top: -15px;
+    font-size: 24px;
+    color: white;
+  }
+  .dateprev{
+    position: relative;
+    top: -15px;
+    font-size: 24px;
+    color: white;
+  }
+
   .addMeal {
     display: flex;
     flex-direction: column;
@@ -68,6 +81,7 @@
       padding: 25px;
       margin-top: 20px;
       box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+    
 
       .mealname {
         width: 200px;
@@ -132,6 +146,7 @@
         }
       }
     }
+    
 
     .noMeal {
       width: 150px;
@@ -309,6 +324,7 @@
       }
     }
     .mealData {
+        padding-bottom: 120px;
       .meal {
         width: 350px;
         .mealname {

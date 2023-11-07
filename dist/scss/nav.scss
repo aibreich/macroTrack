@@ -31,6 +31,10 @@ nav {
     box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
     font-weight: bold;
     }
+    #today{
+        display: none;
+    }
+    
     
     .mealBtn {
         width: 150px;
@@ -60,10 +64,12 @@ nav {
     
         }
         a{
-
+            font-size: 12px;
         }
         .mealBtn{
-            width: 100px;
+            width: 90px;
+            height: 28px;
+            font-size: 12px;
         }
     }
 }

@@ -5,7 +5,9 @@
 
 html,
 body {
-  height: 100%; }
+  height: 100%;
+  background-color: slategray;
+  font-family: Arial, Helvetica, sans-serif; }
 
 h1,
 h2,
@@ -165,6 +167,8 @@ nav {
     font-size: 16px;
     box-shadow: 2px 2px 3px 0px #212121;
     font-weight: bold; }
+  nav #today {
+    display: none; }
   nav .mealBtn {
     width: 150px;
     height: 35px;
@@ -184,8 +188,12 @@ nav {
   nav .app-name {
     width: 130px;
     font-size: 24px; }
+  nav a {
+    font-size: 12px; }
   nav .mealBtn {
-    width: 100px; } }
+    width: 90px;
+    height: 28px;
+    font-size: 12px; } }
 
 .home {
   background-color: lightslategrey;
@@ -199,6 +207,16 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly; }
+  .logged .dateToday {
+    position: relative;
+    top: -15px;
+    font-size: 24px;
+    color: white; }
+  .logged .dateprev {
+    position: relative;
+    top: -15px;
+    font-size: 24px;
+    color: white; }
   .logged .addMeal {
     display: flex;
     flex-direction: column;
@@ -401,8 +419,10 @@ nav {
     width: 550px; } }
 
 @media screen and (max-width: 600px) {
-  .logged .mealData .meal {
-    width: 350px; }
+  .logged .mealData {
+    padding-bottom: 120px; }
+    .logged .mealData .meal {
+      width: 350px; }
   .logged .dailytotal {
     width: 400px;
     height: 120px; }
