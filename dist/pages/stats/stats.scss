@@ -9,7 +9,7 @@
     
       
 
-    .addMeal{
+    .addstats{
         display: flex;
         flex-direction: column;
         align-items: center; 
@@ -75,7 +75,7 @@
             margin-bottom: 15px;
         }
     }
-    .mealData{
+    .statsData{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -143,7 +143,7 @@
 }
 @media screen and (max-width: 850px){
     .stats{
-        .addMeal{
+        .addstats{
             .stats-form{
                 .statf-cont{
                     .height-cont{
@@ -158,7 +158,7 @@
             }
             #addstatsBtn{}
         }
-        .mealData{
+        .statsData{
             .stats{
                 .stats-cont{}
                 .dc{}
@@ -170,7 +170,7 @@
 }
 @media screen and (max-width: 600px){
     .stats{
-        .addMeal{
+        .addstats{
             .stats-form{
                 .statf-cont{
                     .height-cont{
@@ -185,7 +185,7 @@
             }
             #addstatsBtn{}
         }
-        .mealData{
+        .statsData{
             .stats{
                 width: 450px;
                 .stats-cont{

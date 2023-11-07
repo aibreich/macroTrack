@@ -433,7 +433,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly; }
-  .stats .addMeal {
+  .stats .addstats {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -441,59 +441,59 @@ nav {
     background-color: #575757;
     border-radius: 20px;
     color: white; }
-    .stats .addMeal .stats-form {
+    .stats .addstats .stats-form {
       width: 350px;
       height: 160px;
       color: white;
       display: flex;
       align-items: center;
       justify-content: space-evenly; }
-      .stats .addMeal .stats-form .statf-cont {
+      .stats .addstats .stats-form .statf-cont {
         height: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         width: 150px; }
-        .stats .addMeal .stats-form .statf-cont .height-cont {
+        .stats .addstats .stats-form .statf-cont .height-cont {
           display: flex;
           align-items: center;
           justify-content: space-evenly;
           width: 250px;
           padding: 15px; }
-          .stats .addMeal .stats-form .statf-cont .height-cont .left-h {
+          .stats .addstats .stats-form .statf-cont .height-cont .left-h {
             width: 50%;
             height: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly; }
-            .stats .addMeal .stats-form .statf-cont .height-cont .left-h input {
+            .stats .addstats .stats-form .statf-cont .height-cont .left-h input {
               width: 80px; }
-          .stats .addMeal .stats-form .statf-cont .height-cont .right-h {
+          .stats .addstats .stats-form .statf-cont .height-cont .right-h {
             width: 50%;
             height: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly; }
-            .stats .addMeal .stats-form .statf-cont .height-cont .right-h input {
+            .stats .addstats .stats-form .statf-cont .height-cont .right-h input {
               width: 80px; }
-    .stats .addMeal #addstatsBtn {
+    .stats .addstats #addstatsBtn {
       width: 150px;
       height: 20px;
       background-color: darkorange;
       border: 2px solid salmon;
       border-radius: 10px;
       margin-bottom: 15px; }
-  .stats .mealData {
+  .stats .statsData {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
     height: fit-content; }
-    .stats .mealData .stats {
+    .stats .statsData .stats {
       width: 750px;
       height: 125px;
       background-color: white;
@@ -501,7 +501,7 @@ nav {
       padding: 25px;
       margin-top: 20px;
       box-shadow: 2px 2px 3px 0px #212121; }
-      .stats .mealData .stats .stats-cont {
+      .stats .statsData .stats .stats-cont {
         width: 95%;
         height: 55px;
         display: grid;
@@ -509,23 +509,23 @@ nav {
         align-items: center;
         justify-content: space-evenly;
         margin-left: 35px; }
-        .stats .mealData .stats .stats-cont .weight {
+        .stats .statsData .stats .stats-cont .weight {
           width: 200px;
           height: 45px;
           display: flex;
           align-items: center;
           justify-content: space-evenly; }
-        .stats .mealData .stats .stats-cont .height {
+        .stats .statsData .stats .stats-cont .height {
           width: 200px;
           height: 45px;
           display: flex;
           align-items: center;
           justify-content: space-evenly; }
-      .stats .mealData .stats .dc {
+      .stats .statsData .stats .dc {
         position: relative;
         left: -40%;
         bottom: -10px; }
-    .stats .mealData .noMeal {
+    .stats .statsData .noMeal {
       width: 150px;
       height: 30px;
       display: flex;
@@ -533,9 +533,9 @@ nav {
       justify-content: space-evenly; }
 
 @media screen and (max-width: 600px) {
-  .stats .mealData .stats {
+  .stats .statsData .stats {
     width: 450px; }
-    .stats .mealData .stats .stats-cont {
+    .stats .statsData .stats .stats-cont {
       margin-left: 0; }
-    .stats .mealData .stats .dc {
+    .stats .statsData .stats .dc {
       left: -32%; } }

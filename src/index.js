@@ -424,11 +424,11 @@ async function getstatsData() {
     getstatsForm();
   }
 
-  document.getElementById("mealData").innerHTML = htmlStr;
+  document.getElementById("statsData").innerHTML = htmlStr;
 }
 //display stats form
 function getstatsForm() {
-  $(".addMeal").append(`<label for="mName">Add Stats:</label>
+  $(".addstats").append(`<label for="mName">Add Stats:</label>
     <div class="stats-form">
       <div class="statf-cont">
       <label for="calories">Height:</label>
