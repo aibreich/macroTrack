@@ -534,8 +534,14 @@ nav {
 
 @media screen and (max-width: 600px) {
   .stats .statsData .stats {
-    width: 450px; }
+    width: 350px; }
     .stats .statsData .stats .stats-cont {
+      width: 350px;
       margin-left: 0; }
+      .stats .statsData .stats .stats-cont .weight {
+        width: 150px; }
+      .stats .statsData .stats .stats-cont .height {
+        width: 150px; }
     .stats .statsData .stats .dc {
-      left: -32%; } }
+      left: -28%;
+      bottom: -16px; } }

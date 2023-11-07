@@ -185,14 +185,27 @@
             }
             #addstatsBtn{}
         }
+  
+
         .statsData{
             .stats{
-                width: 450px;
+                width: 350px;  
                 .stats-cont{
+                    width: 350px;
                     margin-left: 0;
+
+                    .weight{
+                        width: 150px;
+                        
+                    }
+                    .height{
+                        width: 150px;
+                        
+                    }
                 }
                 .dc{
-                    left: -32%;
+                    left: -28%;
+                    bottom: -16px;
                 }
             }
         }
