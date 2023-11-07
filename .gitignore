@@ -12,3 +12,8 @@ sftp.json
 # project
 /css/styles.css.map
 .prepros
+
+/src/model.js
+
+js.txt
+route.txt
