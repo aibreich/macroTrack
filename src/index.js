@@ -91,7 +91,7 @@ onAuthStateChanged(auth, (user) => {
     document.getElementById("today").style.display = "block";
     document.getElementById("stats").style.display = "block";
     document.getElementById("lo").style.display = "block";
-    document.getElementById("mealBtn").style.display = "flex";
+    // document.getElementById("mealBtn").style.display = "flex";
   } else {
     console.log("No User");
     // route(user);
@@ -129,7 +129,6 @@ async function login() {
       console.log(errorCode);
     });
 }
-
 // logout function
 function logout() {
   signOut(auth)
@@ -140,7 +139,6 @@ function logout() {
       console.log("Error signing out, ", error.code);
     });
 }
-
 // adds user to db when they create an account
 function addUserToDB() {
   let fn = document.getElementById("fname").value.toLowerCase();
@@ -410,11 +408,11 @@ async function getstatsData() {
           <p>${doc.data().weight} lb.</p>
         </div>
         <div class="height">
-          <p>Height:</p>
-          <p>${doc.data().feet} ft.  ${doc.data().inches} in.</p>
+          <p>Sleep Time:</p>
+          <p>${doc.data().hours} Hrs.  ${doc.data().minutes} Mins.</p>
         </div>
-        
       </div>
+      
       <div class="dc"><span>Date Created: </span>${doc.data().date}</div>
     </div>`;
     });
@@ -428,23 +426,23 @@ async function getstatsData() {
 }
 //display stats form
 function getstatsForm() {
-  $(".addstats").append(`<label for="mName">Add Stats:</label>
+  $(".addstats").append(`<div class="stats-b">Add Stats:</div>
     <div class="stats-form">
       <div class="statf-cont">
-      <label for="calories">Height:</label>
+        
+
+        <label for="calories">Sleep Time:</label>
         <div class="height-cont">
         <div class="left-h">
-        <label for="feet">Feet:</label>
-        <input type="number" id="height" />
+        <label for="feet">Hours:</label>
+        <input type="number" id="sleep" />
         </div>
         <div class="right-h">
-        <label for="inches">Inches:</label>
-        <input type="number" id="height2" />
+        <label for="inches">Minutes:</label>
+        <input type="number" id="sleep2" />
         </div>
-        
         </div>
-        
-        <label for="protein">Weight:</label>
+        <label for="weight">Weight:</label>
         <input type="number" id="weight" />
       </div>
       
@@ -457,15 +455,15 @@ function getstatsForm() {
 }
 // add stats to form
 function addstatsToDB() {
-  let height = document.getElementById("height").value;
-  let height2 = document.getElementById("height2").value;
   let weight = document.getElementById("weight").value;
+  let sleep = document.getElementById("sleep").value;
+  let sleep2 = document.getElementById("sleep2").value;
 
   let stats = {
     date: month + "/" + day + "/" + year,
-    feet: height,
-    inches: height2,
     weight: weight,
+    hours: sleep,
+    minutes: sleep2,
     uid: globaluid,
   };
 
@@ -475,9 +473,7 @@ function addstatsToDB() {
 async function addstatsData(stats) {
   try {
     const docRef = await addDoc(collection(db, "Stats"), stats);
-    document.getElementById("height").value = "";
-    document.getElementById("weight").value = "";
-    $(".addMeal").empty();
+    $(".addstats").empty();
     location.reload();
     console.log("Doc id: ", docRef.id);
   } catch (e) {
@@ -496,15 +492,17 @@ function changeRoute() {
 function changePage(pageID) {
   switch (pageID) {
     case "":
+      document.getElementById("mealBtn").style.display = "flex";
       $.get(`pages/logged/logged.html`, function (data) {
-        console.log("data " + data);
+        // console.log("data " + data);
         $("#app").html(data);
         getmealData();
       });
       break;
     case "stats":
+      document.getElementById("mealBtn").style.display = "none";
       $.get(`pages/${pageID}/${pageID}.html`, function (data) {
-        console.log("data " + data);
+        // console.log("data " + data);
         $("#app").html(data);
         getstatsData();
       });
@@ -544,8 +542,9 @@ function changePage(pageID) {
       logInBtn.addEventListener("click", login);
       break;
     case "prev":
+      document.getElementById("mealBtn").style.display = "none";
       $.get(`pages/${pageID}/${pageID}.html`, function (data) {
-        console.log("data " + data);
+        // console.log("data " + data);
         $("#app").html(data);
         getprevData();
       });
@@ -570,23 +569,6 @@ function initListeners() {
     //   location.reload();
     // }, 1.0 * 50);
   });
-
-  //   $("#dayprev").on("click", (e) => {
-  //     setTimeout(() => {
-  //       location.reload();
-  //     }, 1.0 * 50);
-  //   });
-
-  //   $("#today").on("click", (e) => {
-  //     setTimeout(() => {
-  //       location.reload();
-  //     }, 1.0 * 50);
-  //   });
-  //   $("#stats").on("click", (e) => {
-  //     setTimeout(() => {
-  //       location.reload();
-  //     }, 1.0 * 50);
-  //   });
 }
 
 $(document).ready(function () {
