@@ -269,6 +269,8 @@ nav {
           align-items: center;
           justify-content: space-evenly;
           font-size: 18px; }
+          .logged .mealData .meal .meal-cont .cals p {
+            width: 100px; }
         .logged .mealData .meal .meal-cont .fats {
           width: 200px;
           height: 45px;
@@ -276,6 +278,8 @@ nav {
           align-items: center;
           justify-content: space-evenly;
           font-size: 18px; }
+          .logged .mealData .meal .meal-cont .fats p {
+            width: 100px; }
         .logged .mealData .meal .meal-cont .pro {
           width: 200px;
           height: 45px;
@@ -283,6 +287,8 @@ nav {
           align-items: center;
           justify-content: space-evenly;
           font-size: 18px; }
+          .logged .mealData .meal .meal-cont .pro p {
+            width: 100px; }
         .logged .mealData .meal .meal-cont .carbs {
           width: 200px;
           height: 45px;
@@ -290,6 +296,8 @@ nav {
           align-items: center;
           justify-content: space-evenly;
           font-size: 18px; }
+          .logged .mealData .meal .meal-cont .carbs p {
+            width: 100px; }
     .logged .mealData .noMeal {
       width: 150px;
       height: 30px;
@@ -366,8 +374,53 @@ nav {
 @media screen and (max-width: 850px) {
   .logged .mealData .meal {
     width: 450px; }
+    .logged .mealData .meal .meal-cont {
+      margin-top: 15px;
+      margin-left: 25px; }
+      .logged .mealData .meal .meal-cont .cals {
+        width: 175px; }
+        .logged .mealData .meal .meal-cont .cals p {
+          width: 75px; }
+      .logged .mealData .meal .meal-cont .fats {
+        width: 175px; }
+        .logged .mealData .meal .meal-cont .fats p {
+          width: 75px; }
+      .logged .mealData .meal .meal-cont .pro {
+        width: 175px; }
+        .logged .mealData .meal .meal-cont .pro p {
+          width: 75px; }
+      .logged .mealData .meal .meal-cont .carbs {
+        width: 175px; }
+        .logged .mealData .meal .meal-cont .carbs p {
+          width: 75px; }
   .logged .dailytotal {
     width: 550px; } }
+
+@media screen and (max-width: 600px) {
+  .logged .mealData .meal {
+    width: 350px; }
+  .logged .dailytotal {
+    width: 400px;
+    height: 120px; }
+    .logged .dailytotal .total .dt-cont {
+      display: grid;
+      grid-template-columns: repeat(2, auto); }
+      .logged .dailytotal .total .dt-cont .dCals {
+        width: 150px;
+        display: flex;
+        justify-content: space-around; }
+      .logged .dailytotal .total .dt-cont .dFats {
+        width: 150px;
+        display: flex;
+        justify-content: space-around; }
+      .logged .dailytotal .total .dt-cont .dPotein {
+        width: 150px;
+        display: flex;
+        justify-content: space-around; }
+      .logged .dailytotal .total .dt-cont .dCarbs {
+        width: 150px;
+        display: flex;
+        justify-content: space-around; } }
 
 .stats {
   width: 100%;
