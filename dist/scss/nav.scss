@@ -6,10 +6,6 @@ nav {
     align-items: center;
     justify-content: space-evenly;
 
-     
-    
-
-
     .app-name {
         text-decoration: none;
     color: white;
@@ -23,9 +19,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
     }
-
 
     a { 
     text-decoration: none;
@@ -37,10 +31,6 @@ nav {
     box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
     font-weight: bold;
     }
-    a:hover {
-        font-size: 19px;
-        transition: font 1s ease;
-      }
     
     .mealBtn {
         width: 150px;
@@ -58,4 +48,22 @@ nav {
         box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
     }
 }
- 
+
+@media screen and (max-width: 600px){
+
+    nav{
+        
+        .app-name{
+        width: 135px;
+        font-size: 24px;
+   
+    
+        }
+        a{
+
+        }
+        .mealBtn{
+            width: 100px;
+        }
+    }
+}

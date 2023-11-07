@@ -165,9 +165,6 @@ nav {
     font-size: 16px;
     box-shadow: 2px 2px 3px 0px #212121;
     font-weight: bold; }
-  nav a:hover {
-    font-size: 19px;
-    transition: font 1s ease; }
   nav .mealBtn {
     width: 150px;
     height: 35px;
@@ -182,6 +179,13 @@ nav {
     cursor: pointer;
     font-size: 16px;
     box-shadow: 2px 2px 3px 0px #212121; }
+
+@media screen and (max-width: 600px) {
+  nav .app-name {
+    width: 135px;
+    font-size: 24px; }
+  nav .mealBtn {
+    width: 100px; } }
 
 .home {
   background-color: lightslategrey;
@@ -527,3 +531,11 @@ nav {
       display: flex;
       align-items: center;
       justify-content: space-evenly; }
+
+@media screen and (max-width: 600px) {
+  .stats .mealData .stats {
+    width: 450px; }
+    .stats .mealData .stats .stats-cont {
+      margin-left: 0; }
+    .stats .mealData .stats .dc {
+      left: -32%; } }

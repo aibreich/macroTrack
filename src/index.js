@@ -358,21 +358,21 @@ async function getprevData() {
       <h4>Name: ${doc.data().mealName}</h4>
       <div class="meal-cont">
         <div class="cals">
-          <p>Calories</p>
+          <p>Calories: </p>
           <p>${doc.data().calories}</p>
         </div>
         <div class="fats">
-          <p>fats</p>
-          <p>${doc.data().fats}</p>
-        </div>
-        <div class="pro">
-          <p>Protein</p>
-          <p>${doc.data().protein}</p>
-        </div>
-        <div class="carbs">
-          <p>Carbs</p>
-          <p>${doc.data().carbs}</p>
-        </div>
+        <p>Fats:</p>
+        <p>${doc.data().fats}g</p>
+      </div>
+      <div class="pro">
+        <p>Protein:</p>
+        <p>${doc.data().protein}g</p>
+      </div>
+      <div class="carbs">
+        <p>Carbs:</p>
+        <p>${doc.data().carbs}g</p>
+      </div>
       </div>
     </div>`;
     });
@@ -384,14 +384,12 @@ async function getprevData() {
   <div class="total">
   <h4 class="dTotal">Daily Total</h4>
   <div class="dt-cont">
-  <div class="dCals"><span style="font-weight:bold; padding-right:10px;">Calories: </span> ${prevtotalCalories}</div>
-  <div class="dFats"><span style="font-weight:bold; padding-right:10px;" >Fats: </span> ${prevtotalFats}</div>
-  <div class="dPotein"><span style="font-weight:bold; padding-right:10px;">Protein: </span> ${prevtotalProtein}</div>
-  <div class="dCarbs"><span style="font-weight:bold; padding-right:10px;">Carbs: </span> ${prevtotalCarbs}</div>
+  <div class="dCals"><span style="font-weight:bold; padding-right:10px; color:white;">Calories: </span> ${prevtotalCalories}</div>
+  <div class="dFats"><span style="font-weight:bold; padding-right:10px; color:white;" >Fats: </span> ${prevtotalFats}g</div>
+  <div class="dPotein"><span style="font-weight:bold; padding-right:10px; color:white;">Protein: </span> ${prevtotalProtein}g</div>
+  <div class="dCarbs"><span style="font-weight:bold; padding-right:10px; color:white;">Carbs: </span> ${prevtotalCarbs}g</div>
   </div>
   </div>
-  
-  
   </div>`;
 
   document.getElementById("mealData").innerHTML = htmlStr;

@@ -168,3 +168,35 @@
     }
 
 }
+@media screen and (max-width: 600px){
+    .stats{
+        .addMeal{
+            .stats-form{
+                .statf-cont{
+                    .height-cont{
+                        .left-h{
+                            input{}
+                        }
+                        .right-h{
+                            input{}
+                        }
+                    }
+                }
+            }
+            #addstatsBtn{}
+        }
+        .mealData{
+            .stats{
+                width: 450px;
+                .stats-cont{
+                    margin-left: 0;
+                }
+                .dc{
+                    left: -32%;
+                }
+            }
+        }
+        .noMeal{}
+    }
+
+}
