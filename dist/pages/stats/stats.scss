@@ -141,3 +141,30 @@
     
     
 }
+@media screen and (max-width: 850px){
+    .stats{
+        .addMeal{
+            .stats-form{
+                .statf-cont{
+                    .height-cont{
+                        .left-h{
+                            input{}
+                        }
+                        .right-h{
+                            input{}
+                        }
+                    }
+                }
+            }
+            #addstatsBtn{}
+        }
+        .mealData{
+            .stats{
+                .stats-cont{}
+                .dc{}
+            }
+        }
+        .noMeal{}
+    }
+
+}

@@ -228,3 +228,45 @@
     }
     
 }
+
+@media screen and (max-width: 850px){
+    .logged{
+        .addMeal{
+            .meal-form{
+                .left{}
+                .right{}
+                
+            }
+            #addMealBtn{}
+        }
+        .mealData{
+            .meal{
+                width: 450px;
+                .mealname{}
+                .meal-cont{
+                    .cals{}
+                    .fats{}
+                    .pro{}
+                    .carbs{}
+                }
+
+            }
+
+            .noMeal{}
+        }
+
+        .dailytotal{
+            width: 550px;
+            .total{
+                .dTotal{}
+                .dt-cont{
+                    .dCals{}
+                    .dFats{}
+                    .dProtein{}
+                    .dCarbs{}
+                }
+            }
+        }
+    }
+    
+}
