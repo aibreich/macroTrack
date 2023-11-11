@@ -209,7 +209,7 @@ nav {
   justify-content: space-evenly; }
   .logged .dateToday {
     position: relative;
-    top: -15px;
+    top: 0;
     font-size: 24px;
     color: white; }
   .logged .dateprev {
@@ -253,6 +253,42 @@ nav {
       border: 2px solid salmon;
       border-radius: 10px;
       margin-bottom: 15px; }
+  .logged .updateMeal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #575757;
+    border-radius: 20px;
+    color: white; }
+    .logged .updateMeal .meal-form {
+      width: 350px;
+      height: 120px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }
+      .logged .updateMeal .meal-form .left {
+        padding-left: 20px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly; }
+      .logged .updateMeal .meal-form .right {
+        padding-left: 20px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly; }
+    .logged .updateMeal #updateMealBtn {
+      width: 125px;
+      height: 20px;
+      background-color: orange;
+      border: 2px solid salmon;
+      border-radius: 10px;
+      margin-bottom: 15px; }
   .logged .mealData {
     display: flex;
     flex-direction: column;
@@ -269,13 +305,40 @@ nav {
       padding: 25px;
       margin-top: 20px;
       box-shadow: 2px 2px 3px 0px #212121; }
-      .logged .mealData .meal .mealname {
-        width: 200px;
-        height: 35px;
+      .logged .mealData .meal .meal-top {
+        width: 675px;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        font-size: 20px; }
+        justify-content: space-between; }
+        .logged .mealData .meal .meal-top .mealname {
+          width: 300px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          font-size: 20px; }
+        .logged .mealData .meal .meal-top .right-top {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 150px; }
+          .logged .mealData .meal .meal-top .right-top .deleteDocBtn {
+            width: 35px;
+            height: 35px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 30px;
+            left: 0px;
+            top: 0;
+            background-color: darkorange;
+            border: 2px solid #df7a00;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 3px 0px #212121; }
       .logged .mealData .meal .meal-cont {
         width: 95%;
         height: 150px;
@@ -423,6 +486,8 @@ nav {
     padding-bottom: 120px; }
     .logged .mealData .meal {
       width: 350px; }
+      .logged .mealData .meal .meal-top {
+        width: 275px; }
   .logged .dailytotal {
     width: 400px;
     height: 120px; }

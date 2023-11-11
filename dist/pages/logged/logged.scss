@@ -9,7 +9,8 @@
 
   .dateToday{
     position: relative;
-    top: -15px;
+    top: 0;
+    
     font-size: 24px;
     color: white;
   }
@@ -63,6 +64,49 @@
       margin-bottom: 15px;
     }
   }
+  .updateMeal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(87, 87, 87);
+    border-radius: 20px;
+    color: white;
+
+    .meal-form {
+      width: 350px;
+      height: 120px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .left {
+        padding-left: 20px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .right {
+        padding-left: 20px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+    #updateMealBtn {
+      width: 125px;
+      height: 20px;
+      background-color: orange;
+      border: 2px solid salmon;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+  }
 
   .mealData {
     display: flex;
@@ -83,14 +127,51 @@
       box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
     
 
-      .mealname {
-        width: 200px;
-        height: 35px;
+      .meal-top {
+        width: 675px;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        font-size: 20px;
+        justify-content: space-between;
+        
+
+        .mealname {
+            width: 300px; 
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 20px;
+          }
+          .right-top{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            
+            width: 150px;
+            .deleteDocBtn{
+            width: 35px;
+            height: 35px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 30px;   
+            left: 0px;
+            top: 0;
+            background-color: darkorange;
+            border: 2px solid rgb(223, 122, 0);
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+          }
+          }
+    
+          
+
       }
+      
       .meal-cont {
         width: 95%;
         height: 150px;
@@ -327,8 +408,13 @@
         padding-bottom: 120px;
       .meal {
         width: 350px;
-        .mealname {
+        .meal-top{
+            width: 275px;
+            .mealname {
         }
+        .deleteDocBtn{}
+        }
+        
         .meal-cont {
           .cals {
           }
