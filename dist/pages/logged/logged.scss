@@ -229,13 +229,33 @@
     }
     
 
-    .noMeal {
-      width: 150px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
+    .wb-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        height: 130px;
+        width: 400px;
+        border-radius: 20px;
+      padding: 25px;
+      margin-top: 20px; 
+      box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+        
+
+        .noMeal {
+            width: 400px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+          }
+          .nomeal1{
+            width: 400px;
+            height: 30px;
+          }
     }
+    
   }
 
   .dailytotal {

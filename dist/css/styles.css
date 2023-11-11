@@ -37,7 +37,7 @@ p {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      height: 350px;
+      height: 400px;
       width: 250px; }
       #app .newUser .signIn label {
         margin-top: 10px;
@@ -56,6 +56,15 @@ p {
         border-radius: 8px;
         box-shadow: 2px 2px 3px 0px #212121; }
       #app .newUser .signIn #lname {
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid orange;
+        border-right: 2px solid orange;
+        border-top: 2px solid salmon;
+        border-left: 2px solid salmon;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px #212121; }
+      #app .newUser .signIn #dname {
         width: 250px;
         height: 35px;
         border-bottom: 2px solid orange;
@@ -383,12 +392,27 @@ nav {
           font-size: 18px; }
           .logged .mealData .meal .meal-cont .carbs p {
             width: 100px; }
-    .logged .mealData .noMeal {
-      width: 150px;
-      height: 30px;
+    .logged .mealData .wb-cont {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      background-color: white;
+      height: 130px;
+      width: 400px;
+      border-radius: 20px;
+      padding: 25px;
+      margin-top: 20px;
+      box-shadow: 2px 2px 3px 0px #212121; }
+      .logged .mealData .wb-cont .noMeal {
+        width: 400px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly; }
+      .logged .mealData .wb-cont .nomeal1 {
+        width: 400px;
+        height: 30px; }
   .logged .dailytotal {
     width: 650px;
     height: 80px;

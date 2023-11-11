@@ -41,7 +41,7 @@ p {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      height: 350px;
+      height: 400px;
       width: 250px;
       label {
         margin-top: 10px;
@@ -63,6 +63,16 @@ p {
         box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
       }
       #lname {
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid orange;
+        border-right: 2px solid orange;
+        border-top: 2px solid salmon;
+        border-left: 2px solid salmon;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      }
+      #dname {
         width: 250px;
         height: 35px;
         border-bottom: 2px solid orange;
