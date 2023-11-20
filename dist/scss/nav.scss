@@ -30,6 +30,7 @@ nav {
     font-size: 16px;
     box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
     font-weight: bold;
+    display: flex;
     }
     #today{
         display: none;
@@ -51,8 +52,37 @@ nav {
         font-size: 16px;
         box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
     }
+
+    .icon{
+        display: none;
+    }
 }
 
+@media screen and (max-width: 800px){
+
+    nav{
+        
+        .app-name{
+        width: 130px;
+        font-size: 24px;
+   
+    
+        }
+        a{
+            font-size: 12px;
+            display: none; 
+        }
+        .mealBtn{
+            width: 90px;
+            height: 28px;
+            font-size: 12px;
+        }
+
+        .icon{
+            display: block;
+        }
+    }
+}
 @media screen and (max-width: 600px){
 
     nav{
@@ -70,6 +100,10 @@ nav {
             width: 90px;
             height: 28px;
             font-size: 12px;
+        }
+
+        .icon{
+            display: block;
         }
     }
 }

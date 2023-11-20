@@ -130,6 +130,7 @@ p {
         height: 15px;
         font-size: 18px;
       }
+      
       #emailL {
         width: 250px;
         height: 35px;
@@ -161,6 +162,13 @@ p {
         border-left: 2px solid orange;
         background-color: darkorange;
         box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      }
+      #pwI{
+        font-size: 13px;
+        margin-top: -17px;
+        margin-right: -120px;
+        font-weight: bold;
+        display: none;
       }
     }
   }

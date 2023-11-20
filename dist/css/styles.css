@@ -142,6 +142,12 @@ p {
         border-left: 2px solid orange;
         background-color: darkorange;
         box-shadow: 2px 2px 3px 0px #212121; }
+      #app .newUser .loginBox #pwI {
+        font-size: 13px;
+        margin-top: -17px;
+        margin-right: -120px;
+        font-weight: bold;
+        display: none; }
 
 @media screen and (max-width: 850px) {
   .newUser {
@@ -175,7 +181,8 @@ nav {
     border-radius: 5px;
     font-size: 16px;
     box-shadow: 2px 2px 3px 0px #212121;
-    font-weight: bold; }
+    font-weight: bold;
+    display: flex; }
   nav #today {
     display: none; }
   nav .mealBtn {
@@ -192,6 +199,22 @@ nav {
     cursor: pointer;
     font-size: 16px;
     box-shadow: 2px 2px 3px 0px #212121; }
+  nav .icon {
+    display: none; }
+
+@media screen and (max-width: 800px) {
+  nav .app-name {
+    width: 130px;
+    font-size: 24px; }
+  nav a {
+    font-size: 12px;
+    display: none; }
+  nav .mealBtn {
+    width: 90px;
+    height: 28px;
+    font-size: 12px; }
+  nav .icon {
+    display: block; } }
 
 @media screen and (max-width: 600px) {
   nav .app-name {
@@ -202,7 +225,9 @@ nav {
   nav .mealBtn {
     width: 90px;
     height: 28px;
-    font-size: 12px; } }
+    font-size: 12px; }
+  nav .icon {
+    display: block; } }
 
 .home {
   background-color: lightslategrey;
