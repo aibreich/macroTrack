@@ -213,12 +213,10 @@ nav {
     box-shadow: 2px 2px 3px 0px #212121;
     font-weight: bold;
     display: flex; }
-  nav #today {
-    display: none; }
   nav .mealBtn {
     width: 150px;
     height: 35px;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: darkorange;

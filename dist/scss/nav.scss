@@ -34,14 +34,14 @@ nav {
     display: flex;
     }
     #today{
-        display: none;
+        // display: none;
     }
     
     
     .mealBtn {
         width: 150px;
         height: 35px;
-        display: none;
+        display: flex;
         align-items: center;
         justify-content: space-evenly;
         background-color: darkorange;
