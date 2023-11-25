@@ -639,6 +639,23 @@ nav {
       padding: 25px;
       margin-top: 20px;
       box-shadow: 2px 2px 3px 0px #212121; }
+      .stats .statsData .stats .deleteDocBtn {
+        width: 35px;
+        height: 35px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 30px;
+        left: 347px;
+        top: -5px;
+        background-color: darkorange;
+        border: 2px solid #df7a00;
+        color: black;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 2px 2px 3px 0px #212121; }
       .stats .statsData .stats .stats-cont {
         width: 95%;
         height: 55px;
@@ -661,8 +678,8 @@ nav {
           justify-content: space-evenly; }
       .stats .statsData .stats .dc {
         position: relative;
-        left: -40%;
-        bottom: -10px; }
+        left: -39%;
+        bottom: -8px; }
     .stats .statsData .noMeal {
       width: 150px;
       height: 30px;
@@ -740,10 +757,11 @@ nav {
       width: 550px;
       height: 175px; }
       .account .userCont2 .labelCont #pwDM {
-        height: 14px;
+        height: 15px;
         font-size: 13px;
         margin-top: 17px;
-        font-weight: bold; }
+        font-weight: bold;
+        display: none; }
       .account .userCont2 .labelCont label {
         width: 75px; }
       .account .userCont2 .labelCont .inject {
