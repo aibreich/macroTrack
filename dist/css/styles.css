@@ -202,7 +202,35 @@ nav {
     height: 32.5px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    z-index: 4; }
+  nav .menu-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 3;
+    top: 0;
+    width: 300px;
+    /* Adjust this value based on your menu width */
+    height: 105%;
+    background-color: #575757;
+    padding-top: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease; }
+    nav .menu-container a {
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+      border: 2px solid darkorange;
+      border-radius: 5px;
+      font-size: 16px;
+      box-shadow: 2px 2px 3px 0px #212121;
+      font-weight: bold;
+      display: flex; }
+    nav .menu-container .links {
+      display: flex; }
   nav a {
     text-decoration: none;
     color: white;
@@ -228,7 +256,11 @@ nav {
     font-size: 16px;
     box-shadow: 2px 2px 3px 0px #212121; }
   nav .icon {
-    display: none; }
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 3; }
 
 @media screen and (max-width: 800px) {
   nav .app-name {
@@ -248,6 +280,8 @@ nav {
   nav .app-name {
     width: 130px;
     font-size: 24px; }
+  nav .menu-container {
+    width: 300px; }
   nav a {
     font-size: 12px; }
   nav .mealBtn {
