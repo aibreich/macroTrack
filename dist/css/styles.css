@@ -567,7 +567,7 @@ nav {
         width: 275px; }
   .logged .dailytotal {
     width: 400px;
-    height: 120px; }
+    height: 150px; }
     .logged .dailytotal .total .dt-cont {
       display: grid;
       grid-template-columns: repeat(2, auto); }
