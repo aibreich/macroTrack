@@ -31,7 +31,7 @@ nav {
     justify-content: space-evenly;
     z-index: 3;
     top: 0;
-    // right: -300px; /* Off-screen initially */
+    right: -300px; /* Off-screen initially */
     width: 300px; /* Adjust this value based on your menu width */
     height: 105%;
     background-color: rgb(87, 87, 87); 
@@ -54,6 +54,24 @@ nav {
 
     .links{
         display: flex;
+    }
+    .links2{
+        display: flex;
+        text-decoration: none;
+      color: white;
+      padding: 5px;
+      border: 2px solid darkorange;
+      border-radius: 5px;
+      font-size: 16px;
+      box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      font-weight: bold;
+    }
+    input{
+        margin-top: -70px;
+    }
+    #pD{
+        margin-top: -70px;
+
     }
   }
 
@@ -149,3 +167,23 @@ nav {
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+    nav {
+      .app-name {
+      }
+      .menu-container{
+          width: 500px;
+          padding-left: 15%;
+          right: -500px;
+      }
+      a {
+      }
+      .mealBtn {
+        
+      }
+  
+      .icon {
+      }
+    }
+  }

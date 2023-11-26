@@ -212,6 +212,8 @@ nav {
     justify-content: space-evenly;
     z-index: 3;
     top: 0;
+    right: -300px;
+    /* Off-screen initially */
     width: 300px;
     /* Adjust this value based on your menu width */
     height: 105%;
@@ -231,6 +233,20 @@ nav {
       display: flex; }
     nav .menu-container .links {
       display: flex; }
+    nav .menu-container .links2 {
+      display: flex;
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+      border: 2px solid darkorange;
+      border-radius: 5px;
+      font-size: 16px;
+      box-shadow: 2px 2px 3px 0px #212121;
+      font-weight: bold; }
+    nav .menu-container input {
+      margin-top: -70px; }
+    nav .menu-container #pD {
+      margin-top: -70px; }
   nav a {
     text-decoration: none;
     color: white;
@@ -290,6 +306,12 @@ nav {
     font-size: 12px; }
   nav .icon {
     display: block; } }
+
+@media screen and (max-width: 500px) {
+  nav .menu-container {
+    width: 500px;
+    padding-left: 15%;
+    right: -500px; } }
 
 .home {
   background-color: lightslategrey;
