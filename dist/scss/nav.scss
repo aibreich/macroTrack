@@ -67,10 +67,10 @@ nav {
       font-weight: bold;
     }
     input{
-        margin-top: -70px;
+        margin-top: -50px;
     }
     #pD{
-        margin-top: -70px;
+        margin-top: -50px;
 
     }
   }
@@ -109,14 +109,13 @@ nav {
 
   .icon {
     // display: none;
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: absolute;
+    top: 15px; 
+    right: 15px;
     cursor: pointer;
     z-index: 3;
      
     #menuIcon{
-
     }
   }
  

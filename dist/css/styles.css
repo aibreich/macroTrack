@@ -244,9 +244,9 @@ nav {
       box-shadow: 2px 2px 3px 0px #212121;
       font-weight: bold; }
     nav .menu-container input {
-      margin-top: -70px; }
+      margin-top: -50px; }
     nav .menu-container #pD {
-      margin-top: -70px; }
+      margin-top: -50px; }
   nav a {
     text-decoration: none;
     color: white;
@@ -272,9 +272,9 @@ nav {
     font-size: 16px;
     box-shadow: 2px 2px 3px 0px #212121; }
   nav .icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
     cursor: pointer;
     z-index: 3; }
 
@@ -518,7 +518,8 @@ nav {
         height: 30px;
         display: flex;
         align-items: center;
-        justify-content: space-evenly; }
+        justify-content: space-evenly;
+        text-align: center; }
       .logged .mealData .wb-cont .nomeal1 {
         width: 400px;
         height: 30px; }
