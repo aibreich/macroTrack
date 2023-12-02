@@ -319,7 +319,9 @@ nav {
     padding-left: 15%;
     right: -500px; }
   nav .mealBtn {
-    margin-right: 50px; } }
+    margin-right: 50px; }
+  nav .icon {
+    top: 25px; } }
 
 .home {
   background-color: lightslategrey;
