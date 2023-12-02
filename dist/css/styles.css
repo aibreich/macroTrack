@@ -291,10 +291,9 @@ nav {
     width: 130px;
     font-size: 24px; }
   nav a {
-    font-size: 12px;
-    display: none; }
+    font-size: 12px; }
   nav .mealBtn {
-    width: 90px;
+    width: 120px;
     height: 28px;
     font-size: 12px; }
   nav .icon {
@@ -309,7 +308,6 @@ nav {
   nav a {
     font-size: 12px; }
   nav .mealBtn {
-    width: 90px;
     height: 28px;
     font-size: 12px; }
   nav .icon {
@@ -319,7 +317,9 @@ nav {
   nav .menu-container {
     width: 500px;
     padding-left: 15%;
-    right: -500px; } }
+    right: -500px; }
+  nav .mealBtn {
+    margin-right: 50px; } }
 
 .home {
   background-color: lightslategrey;
