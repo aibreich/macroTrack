@@ -6,28 +6,15 @@
     <link rel="icon" type="image/png" href="css/img/app-icon.png" />
     <title>MacroTrack</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
   </head>
   <body>
     <nav>
       <div class="app-name">MacroTrack</div>
-      <div class="menu-container" style="">
-        <a id="today" class="links" href="#/">Today</a>
-        <div class="links2" href="javascript:void(0);">Select a Date:</div>
-        <input type="date" id="selected-date" />
-        <a id="pD" class="links" href="#/prev">Pick Date</a>
-        <a id="stats" class="links" href="#/stats">Stats</a>
-        <a id="acc" class="links" href="#/account">Account</a>
-        <a id="lo" class="links" href="#/signIn">Logout</a>
-      </div>
-
+      <a id="dayprev" href="#/prev">Prev</a>
+      <a id="today" href="#/">Today</a>
+      <a id="stats" href="#/stats">Stats</a>
+      <a id="lo" href="#">Logout</a>
       <div class="mealBtn" id="mealBtn">Add Meal</div>
-      <a href="javascript:void(0);" class="icon" id="hamburgerMenu">
-        <i class="fa fa-bars" id="menuIcon" style="font-size: 25px"></i>
-      </a>
     </nav>
     <div id="app"></div>
     <script src="lib/jquery-3.7.1.min.js"></script>

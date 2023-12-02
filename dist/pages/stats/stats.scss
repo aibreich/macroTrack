@@ -100,25 +100,6 @@
         margin-top: 20px;
 
         box-shadow: 2px 2px 3px 0px rgb(33, 33, 33); 
-
-        .deleteDocBtn{
-            width: 35px;
-            height: 35px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            font-size: 30px;   
-            left: 347px;
-            top: -5px;
-            background-color: darkorange;
-            border: 2px solid rgb(223, 122, 0);
-            color: black;
-            font-weight: bold;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
-          }
  
         .stats-cont{
             width: 95%;
@@ -151,8 +132,8 @@
         
         .dc{
             position: relative;
-            left: -39%;
-            bottom: -8px;
+            left: -40%;
+            bottom: -10px;
         }
     } 
     .noMeal{
