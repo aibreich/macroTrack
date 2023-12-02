@@ -249,10 +249,12 @@
             display: flex;
             align-items: center;
             justify-content: space-evenly;
+            text-align: center;
           }
           .nomeal1{
             width: 400px;
             height: 30px;
+            
              
           }
     }
@@ -261,7 +263,7 @@
 
   .dailytotal {
     width: 650px;
-    height: 80px;
+    height: 105px;
     // height: fit-content;
     position: fixed;
     bottom: 5px;
@@ -276,7 +278,7 @@
 
     .total {
       width: 650px;
-      height: 70px;
+      height: 80px;
       // background-color: white;
       padding: 25px;
       // margin-bottom: 60px;
@@ -286,8 +288,8 @@
       justify-content: space-evenly;
 
       .dTotal {
-        height: 40px;
-        width: 100px;
+        height: 20px; 
+        width: 220px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -454,7 +456,7 @@
 
     .dailytotal {
         width: 400px;
-      height: 120px;
+      height: 150px;
       .total {
         .dTotal {
         }

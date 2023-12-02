@@ -1,17 +1,17 @@
 nav {
-    height: 10vh;
-    width: 100vw;
-    background-color: rgb(87, 87, 87);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(87, 87, 87);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
-    .app-name {
-        text-decoration: none;
+  .app-name {
+    text-decoration: none;
     color: white;
     font-weight: bold;
     padding: 5px;
-    border-bottom: 3px solid darkorange; 
+    border-bottom: 3px solid darkorange;
     border-radius: 5px;
     width: 160px;
     font-size: 28px;
@@ -19,9 +19,75 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 4;
+
+  }
+
+  .menu-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 3;
+    top: 0;
+    right: -300px; /* Off-screen initially */
+    width: 300px; /* Adjust this value based on your menu width */
+    height: 105%;
+    background-color: rgb(87, 87, 87); 
+    padding-top: 60px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+      border: 2px solid darkorange;
+      border-radius: 5px;
+      font-size: 16px;
+      box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      font-weight: bold;
+      // display: none;
+      display: flex;
     }
 
-    a { 
+    .links{
+        display: flex;
+    }
+    .links2{
+        display: flex;
+        text-decoration: none;
+      color: white;
+      padding: 5px;
+      border: 2px solid darkorange;
+      border-radius: 5px;
+      font-size: 16px;
+      box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      font-weight: bold;
+    }
+    input{
+        margin-top: -50px;
+    }
+    #pD{
+        margin-top: -50px;
+
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    // border: 2px solid darkorange;
+    border-radius: 5px;
+    // font-size: 16px;
+    // box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+    font-weight: bold;
+    // display: none;
+    display: flex;
+  }
+  #hamburgerMenu {
     text-decoration: none;
     color: white;
     padding: 5px;
@@ -30,46 +96,105 @@ nav {
     font-size: 16px;
     box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
     font-weight: bold;
+    // display: none;
+    display: flex;
+  }
+  #today {
+    // display: none;
+  }
+
+  .mealBtn {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: darkorange;
+    border: 2px solid rgb(223, 122, 0);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+  }
+
+  .icon {
+    // display: none;
+    position: absolute;
+    top: 15px; 
+    right: 15px;
+    cursor: pointer;
+    z-index: 3;
+     
+    #menuIcon{
     }
-    #today{
-        display: none;
+  }
+ 
+}
+
+
+@media screen and (max-width: 800px) {
+  nav {
+    .app-name {
+      width: 130px;
+      font-size: 24px;
     }
-    
-    
+    a {
+      font-size: 12px;
+      display: none;
+    }
     .mealBtn {
-        width: 150px;
-        height: 35px;
-        display: none;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: darkorange;
-        border: 2px solid rgb(223, 122, 0);
-        color: white;
-        font-weight: bold;
-        border-radius: 10px;
-        cursor: pointer;
-        font-size: 16px;
-        box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+      width: 90px;
+      height: 28px;
+      font-size: 12px;
     }
+
+    .icon {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    .app-name {
+      width: 130px;
+      font-size: 24px;
+    }
+    .menu-container{
+        width: 300px;
+    }
+    a {
+      font-size: 12px;
+    }
+    .mealBtn {
+      width: 90px;
+      height: 28px;
+      font-size: 12px;
+    }
+
+    .icon {
+      display: block;
+    }
+  }
 }
 
-@media screen and (max-width: 600px){
-
-    nav{
+@media screen and (max-width: 500px) {
+    nav {
+      .app-name {
+      }
+      .menu-container{
+          width: 500px;
+          padding-left: 15%;
+          right: -500px;
+      }
+      a {
+      }
+      .mealBtn {
         
-        .app-name{
-        width: 130px;
-        font-size: 24px;
-   
-    
-        }
-        a{
-            font-size: 12px;
-        }
-        .mealBtn{
-            width: 90px;
-            height: 28px;
-            font-size: 12px;
-        }
+      }
+  
+      .icon {
+      }
     }
-}
+  }

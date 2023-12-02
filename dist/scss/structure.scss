@@ -41,8 +41,10 @@ p {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      height: 400px;
-      width: 250px;
+      height: 445px;
+      width: 450px;
+      background-color: white;
+      border-radius: 20px;
       label {
         margin-top: 10px;
         margin-right: 120px;
@@ -50,7 +52,21 @@ p {
         height: 15px;
         font-size: 18px;
       }
+      a { 
+        text-decoration: none;
+        color: black;
+        // padding: 5px;
+        border-radius: 5px;
+        font-size: 16px;
+        border-bottom: 2px solid black;
+        // box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+        font-weight: bold;
+        display: flex;
+        }
 
+        a:hover{
+          color: orange;
+        }
       #fname {
         width: 250px;
         height: 35px;
@@ -107,6 +123,9 @@ p {
         margin-top: 15px;
         width: 250px;
         height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
         background-color: darkorange;
         border-bottom: 2px solid orange;
         border-right: 2px solid orange;
@@ -116,20 +135,38 @@ p {
       }
     }
     .loginBox {
-      height: 220px;
-      width: 250px;
+      height: 280px;
+      width: 450px;
       flex-direction: column;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      background-color: white;
+      border-radius: 20px;
+      a { 
+        text-decoration: none;
+        color: black;
+        // padding: 5px;
+        border-radius: 5px;
+        font-size: 16px;
+        border-bottom: 2px solid black;
+        // box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+        font-weight: bold;
+        display: flex;
+        }
+
+        a:hover{
+          color: orange;
+        }
 
       label {
         margin-top: 15px;
-        margin-right: 120px;
-        width: 120px;
+        margin-right: 100px;
+        width: 150px;
         height: 15px;
         font-size: 18px;
       }
+      
       #emailL {
         width: 250px;
         height: 35px;
@@ -153,6 +190,9 @@ p {
 
       #logIn {
         margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
         width: 250px;
         height: 35px;
         border-bottom: 2px solid salmon;
@@ -161,6 +201,14 @@ p {
         border-left: 2px solid orange;
         background-color: darkorange;
         box-shadow: 2px 2px 3px 0px rgb(33, 33, 33);
+        cursor: pointer;
+      }
+      #pwI{
+        font-size: 13px;
+        margin-top: -17px;
+        margin-right: -120px;
+        font-weight: bold;
+        display: none;
       }
     }
   }
