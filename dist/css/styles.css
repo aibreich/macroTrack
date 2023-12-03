@@ -268,7 +268,7 @@ nav {
   nav .mealBtn {
     width: 150px;
     height: 35px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-evenly;
     background-color: darkorange;
@@ -673,7 +673,9 @@ nav {
     .stats .addstats .stats-b {
       position: relative;
       left: -35%;
-      bottom: -13px; }
+      bottom: -13px;
+      font-weight: bold;
+      font-size: 16px; }
     .stats .addstats .stats-form {
       width: 350px;
       height: 150px;
@@ -718,7 +720,8 @@ nav {
       background-color: darkorange;
       border: 2px solid salmon;
       border-radius: 10px;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      color: white; }
   .stats .statsData {
     display: flex;
     flex-direction: column;
@@ -810,15 +813,17 @@ nav {
     justify-content: space-evenly;
     width: 550px;
     height: 150px;
-    background-color: white;
+    background-color: #575757;
     box-shadow: 0px 2px 3px 0px #212121;
+    color: white;
     margin-bottom: 15px;
     border-radius: 15px; }
     .account .userCont .labelCont {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      width: 550px; }
+      width: 550px;
+      color: orange; }
       .account .userCont .labelCont label {
         width: 75px; }
       .account .userCont .labelCont .inject {
@@ -835,8 +840,7 @@ nav {
         font-size: 12px;
         background-color: darkorange;
         border: 2px solid #df7a00;
-        color: black;
-        font-weight: bold;
+        color: white;
         border-radius: 10px;
         cursor: pointer;
         box-shadow: 2px 2px 3px 0px #212121; }
@@ -847,7 +851,8 @@ nav {
     justify-content: space-evenly;
     width: 550px;
     height: 200px;
-    background-color: white;
+    background-color: #575757;
+    color: white;
     box-shadow: 0px 2px 3px 0px #212121;
     border-radius: 15px;
     padding-top: 10px; }
@@ -880,9 +885,8 @@ nav {
         font-size: 12px;
         background-color: darkorange;
         border: 2px solid #df7a00;
-        color: black;
-        font-weight: bold;
         border-radius: 10px;
+        color: white;
         cursor: pointer;
         box-shadow: 2px 2px 3px 0px #212121; }
   .account .heightCont {

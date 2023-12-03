@@ -22,7 +22,8 @@
             position: relative;
             left: -35%;
             bottom: -13px;
-            
+            font-weight: bold;
+            font-size: 16px;
         }
         
         .stats-form{
@@ -80,6 +81,7 @@
             border: 2px solid salmon;
             border-radius: 10px;  
             margin-bottom: 15px;
+            color: white;
         }
     }
     .statsData{
