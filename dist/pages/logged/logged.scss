@@ -27,9 +27,13 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: rgb(87, 87, 87); 
-    padding-right: 20px;
+    // padding-right: 20px;
     border-radius: 20px;
     color: white;
+
+    label{
+      padding-top: 10px;
+    }
 
     .meal-form {
       width: 450px;
@@ -48,7 +52,7 @@
         justify-content: space-evenly;
       }
       .right {
-        padding-left: 20px;
+        padding-right: 20px;
         height: 100px;
         display: flex;
         flex-direction: column;
@@ -422,8 +426,26 @@
     .addMeal {
       .meal-form {
         .left {
+          padding-left: 5px;
+          #cals{
+            width: 120px;
+          }
+          #pro{
+            width: 120px;
+
+          }
+
         }
         .right {
+          padding-right: 5px;
+          #fats{
+            width: 120px;
+
+          }
+          #carbs{
+            width: 120px;
+
+          }
         }
       }
       #addMealBtn {
@@ -442,16 +464,12 @@
         
         .meal-cont {
           .cals {
-            width: 100px;
           }
           .fats {
-            width: 100px;
           }
           .pro {
-            width: 100px;
           }
           .carbs {
-            width: 100px;
           }
         }
       }

@@ -351,9 +351,10 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     background-color: #575757;
-    padding-right: 20px;
     border-radius: 20px;
     color: white; }
+    .logged .addMeal label {
+      padding-top: 10px; }
     .logged .addMeal .meal-form {
       width: 450px;
       height: 140px;
@@ -369,7 +370,7 @@ nav {
         align-items: center;
         justify-content: space-evenly; }
       .logged .addMeal .meal-form .right {
-        padding-left: 20px;
+        padding-right: 20px;
         height: 100px;
         display: flex;
         flex-direction: column;
@@ -629,20 +630,24 @@ nav {
     width: 550px; } }
 
 @media screen and (max-width: 600px) {
+  .logged .addMeal .meal-form .left {
+    padding-left: 5px; }
+    .logged .addMeal .meal-form .left #cals {
+      width: 120px; }
+    .logged .addMeal .meal-form .left #pro {
+      width: 120px; }
+  .logged .addMeal .meal-form .right {
+    padding-right: 5px; }
+    .logged .addMeal .meal-form .right #fats {
+      width: 120px; }
+    .logged .addMeal .meal-form .right #carbs {
+      width: 120px; }
   .logged .mealData {
     padding-bottom: 120px; }
     .logged .mealData .meal {
       width: 350px; }
       .logged .mealData .meal .meal-top {
         width: 275px; }
-      .logged .mealData .meal .meal-cont .cals {
-        width: 100px; }
-      .logged .mealData .meal .meal-cont .fats {
-        width: 100px; }
-      .logged .mealData .meal .meal-cont .pro {
-        width: 100px; }
-      .logged .mealData .meal .meal-cont .carbs {
-        width: 100px; }
   .logged .dailytotal {
     width: 400px;
     height: 150px; }
