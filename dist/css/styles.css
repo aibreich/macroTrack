@@ -351,11 +351,12 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     background-color: #575757;
+    padding-right: 20px;
     border-radius: 20px;
     color: white; }
     .logged .addMeal .meal-form {
-      width: 350px;
-      height: 120px;
+      width: 450px;
+      height: 140px;
       color: white;
       display: flex;
       align-items: center;
@@ -601,6 +602,8 @@ nav {
           font-size: 16px; }
 
 @media screen and (max-width: 850px) {
+  .logged .addMeal .meal-form {
+    width: 350px; }
   .logged .mealData .meal {
     width: 450px; }
     .logged .mealData .meal .meal-cont {

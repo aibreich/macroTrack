@@ -26,13 +26,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(87, 87, 87); 
+    padding-right: 20px;
     border-radius: 20px;
     color: white;
 
     .meal-form {
-      width: 350px;
-      height: 120px;
+      width: 450px;
+      height: 140px;
       color: white;
       display: flex;
       align-items: center;
@@ -42,7 +43,7 @@
         padding-left: 20px;
         height: 100px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column;   
         align-items: center;
         justify-content: space-evenly;
       }
@@ -348,6 +349,7 @@
   .logged {
     .addMeal {
       .meal-form {
+        width: 350px;
         .left {
         }
         .right {
