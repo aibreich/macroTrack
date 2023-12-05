@@ -635,6 +635,14 @@ nav {
       width: 350px; }
       .logged .mealData .meal .meal-top {
         width: 275px; }
+      .logged .mealData .meal .meal-cont .cals {
+        width: 100px; }
+      .logged .mealData .meal .meal-cont .fats {
+        width: 100px; }
+      .logged .mealData .meal .meal-cont .pro {
+        width: 100px; }
+      .logged .mealData .meal .meal-cont .carbs {
+        width: 100px; }
   .logged .dailytotal {
     width: 400px;
     height: 150px; }
