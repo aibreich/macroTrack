@@ -10,4 +10,4 @@
 
 ### To start tracking your food and sleep. Create an account and get started. Upon creating a new profile you can navigate to the account page to set your daily goal. Or update your display name and change your password.
 
-### Adding meals,
+### For the Most updated version use the github Hosted link.
